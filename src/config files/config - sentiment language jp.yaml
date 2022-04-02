@@ -1,0 +1,28 @@
+batch_size: 8
+gradient_accumulation_steps: 2
+warmup_proportion: 0
+num_classification_epochs: 5
+num_decoder_epochs: 3
+gpus: 1
+random_seed: 42
+num_classes: 2
+data_dir: data/sentiment language jp/
+results_dir_path: results/sentiment language jp
+checkpoint_dir_path: trained_models/sentiment language jp
+model_name: moving data
+repetition_penalty: 2.0
+length_penalty: 1.0
+early_stopping: true
+diversity_penalty: 0.1
+model_path: google/mt5-base
+max_seq_length: 128
+weight_decay: 0.001
+learning_rate: 5e-5
+num_drfs: 25
+drf_src_count: 20
+drf_tgt_count: 5
+num_repetitions: 5
+num_drfs_per_sen: 5
+unk_domain_prob: 0.05
+metric: accuracy
+is_multi_lang: true

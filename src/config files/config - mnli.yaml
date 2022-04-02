@@ -1,0 +1,28 @@
+batch_size: 8
+checkpoint_dir_path: trained_models/mnli
+data_dir: data/mnli/
+diversity_penalty: 0.1
+drf_src_count: 20
+drf_tgt_count: 5
+early_stopping: true
+gpus: 1
+gradient_accumulation_steps: 2
+learning_rate: 5e-6
+length_penalty: 1.0
+max_seq_length: 128
+model_name: moving data
+model_path: t5-base
+num_classes: 3
+num_classification_epochs: 5
+num_decoder_epochs: 3
+num_drfs: 25
+num_drfs_per_sen: 5
+num_repetitions: 5
+random_seed: 118
+repetition_penalty: 2.0
+results_dir_path: results/mnli
+warmup_proportion: 0
+weight_decay: 0.001
+unk_domain_prob: 0.05
+metric: macro f1
+is_multi_lang: false
