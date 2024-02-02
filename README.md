@@ -1,6 +1,6 @@
 # Hyper Networks for Out of Distribution Generalization in NLP
 
-### Official code repository for the  paper ["Example-based Hypernetworks for Out-of-Distribution Generalization"](https://arxiv.org/abs/2203.14276) 
+### Official code repository for the  paper ["Example-based Hypernetworks for Multi-source Adaptation to Unseen Domains"](https://aclanthology.org/2023.findings-emnlp.610/) 
  
 We introduce three ways to use hyper networks for the adaptation to unknown domains: Hyper-DN (Domain Name), Hyper-DRF and Hyper-PADA (for more details, see section 3 in the paper).
 The models are trained on labeled data from several source domains and then are tested on an unseen target domain.
@@ -54,10 +54,25 @@ In order to change the hyper-parameters of a specific run, go to the config file
 
 ## How to Cite Our Models
 ```
-@article{volk2022example,
-  title={Example-based Hypernetworks for Out-of-Distribution Generalization},
-  author={Volk, Tomer and Ben-David, Eyal and Amosy, Ohad and Chechik, Gal and Reichart, Roi},
-  journal={arXiv preprint arXiv:2203.14276},
-  year={2022}
+@inproceedings{DBLP:conf/emnlp/VolkBACR23,
+  author       = {Tomer Volk and
+                  Eyal Ben{-}David and
+                  Ohad Amosy and
+                  Gal Chechik and
+                  Roi Reichart},
+  editor       = {Houda Bouamor and
+                  Juan Pino and
+                  Kalika Bali},
+  title        = {Example-based Hypernetworks for Multi-source Adaptation to Unseen
+                  Domains},
+  booktitle    = {Findings of the Association for Computational Linguistics: {EMNLP}
+                  2023, Singapore, December 6-10, 2023},
+  pages        = {9096--9113},
+  publisher    = {Association for Computational Linguistics},
+  year         = {2023},
+  url          = {https://aclanthology.org/2023.findings-emnlp.610},
+  timestamp    = {Wed, 13 Dec 2023 17:20:20 +0100},
+  biburl       = {https://dblp.org/rec/conf/emnlp/VolkBACR23.bib},
+  bibsource    = {dblp computer science bibliography, https://dblp.org}
 }
 ```
